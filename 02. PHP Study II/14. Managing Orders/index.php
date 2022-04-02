@@ -14,11 +14,11 @@
     <div class="menu-items">
       <?php foreach ($menus as $menu): ?>
         <div class="menu-item">
-          <!-- Rewrite the code below using the getter of the image property -->
           <img src="<?php echo $menu->getImage() ?>" class="menu-item-image">
-          <!-- Rewrite the code below using the getter of the name property -->
           <h3 class="menu-item-name"><?php echo $menu->getName() ?></h3>
           <p class="price">$<?php echo $menu->getTaxIncludedPrice() ?> (tax included)</p>
+          <!-- Print the orderCount property using the getOrderCount method -->
+          <p>Qty: <?php echo $menu->getOrderCount() ?></p>
         </div>
       <?php endforeach ?>
     </div>
